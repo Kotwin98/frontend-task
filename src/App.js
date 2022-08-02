@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import UserInput from './components/UserInput/UserInput';
+import UserLocationInfo from './components/UserLocationInfo/UserLocationInfo';
+import UserLocationMap from './components/UserLocationMap/UserLocationMap';
+import LastSearchInfo from './components/LastSearchInfo/LastSearchInfo';
+import LastSearchMap from './components/LastSearchMap/LastSearchMap';
+import AllSearches from './components/AllSearches/AllSearches';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserInput />
+      <UserLocationInfo />
+      <UserLocationMap />
+      <LastSearchInfo />
+      <LastSearchMap />
+      <AllSearches />
     </div>
   );
 }
